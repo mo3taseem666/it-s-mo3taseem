@@ -1,0 +1,86 @@
+.boxxxx {
+    animation-name: animatee;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+.boxxxx:hover {
+    animation-play-state: paused;
+}
+
+.boxx{
+    border-radius: 15px;
+}
+
+.boxxxx a{
+    transition: .25s;
+}
+
+
+.boxxxx a:hover {
+
+    scale: 1.07;
+    /* scale: 1.5;
+    transition: .2s;
+    animation-name: animateeee;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+
+@keyframes animatee {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(750px);
+    }
+    50% {
+        transform: translateX(1500px);
+    }
+    75% {
+        transform: translateX(750px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+/* 
+@keyframes animateeee {
+    0% {
+        scale: 1;
+    }
+    25% {
+        scale: 1.2;
+    }
+    50% {
+        scale: 1.5;
+    }
+    75% {
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    @keyframes animatee {
+        0% {
+            transform: translateX(0px);
+        }
+        25% {
+            transform: translateX(-750px);
+        }
+        50% {
+            transform: translateX(-1500px);
+        }
+        75% {
+            transform: translateX(-750px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}
